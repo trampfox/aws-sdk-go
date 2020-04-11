@@ -8445,6 +8445,12 @@ func (s *CreateCacheClusterInput) Validate() error {
 	return nil
 }
 
+// SetAZMode sets the AtRestEncryptionEnabled field's value.
+func (s *CreateCacheClusterInput) SetAtRestEncryptionEnabled(v bool) *CreateCacheClusterInput {
+	s.AtRestEncryptionEnabled = &v
+	return s
+}
+
 // SetAZMode sets the AZMode field's value.
 func (s *CreateCacheClusterInput) SetAZMode(v string) *CreateCacheClusterInput {
 	s.AZMode = &v
@@ -8580,6 +8586,12 @@ func (s *CreateCacheClusterInput) SetSnapshotWindow(v string) *CreateCacheCluste
 // SetTags sets the Tags field's value.
 func (s *CreateCacheClusterInput) SetTags(v []*Tag) *CreateCacheClusterInput {
 	s.Tags = v
+	return s
+}
+
+// SetTags sets the TransitEncryptionEnabled field's value.
+func (s *CreateCacheClusterInput) SetTransitEncryptionEnabled(v bool) *CreateCacheClusterInput {
+	s.TransitEncryptionEnabled = &v
 	return s
 }
 
